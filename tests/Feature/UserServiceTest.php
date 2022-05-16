@@ -2,20 +2,20 @@
 
 namespace Tests\Feature;
 
-use App\Service\UserService;
+use App\Services\UserService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class UserServiceTest extends TestCase
 {
-  private UserService $UserService;
+  private UserService $userService;
 
   protected function setUp():void
   {
       parent::setUp();
 
-      $this->UserService = $this->app->make(UserService::class);
+      $this->userService = $this->app->make(UserService::class);
   }
 
   Public function testSample()
