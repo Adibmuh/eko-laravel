@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Service\Impl\UserServiceImpl;
-use App\Service\UserService;
+use App\Services\Impl\UserServiceImpl;
+use App\Services\UserService;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 

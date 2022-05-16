@@ -41,11 +41,6 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
-$app->singleton(
-    \Illuminate\Contracts\Container\BindingResolutionException::class,
-    App\Services\UserService::class
-);
-
 /*
 |--------------------------------------------------------------------------
 | Return The Application
